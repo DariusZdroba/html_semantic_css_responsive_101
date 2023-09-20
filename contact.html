@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__h1">Little Taco Shop</h1>
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li><a href="/">Home</a></li>
+          <li><a href="/#menu">Menu</a></li>
+          <li><a href="hours.html">Hours</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+     
+    </header>
+
+      <section class="hero">
+         <figure>
+        <img
+          src="./img/tacos_close_up_1000x649.png"
+          alt="Tacos close up"
+          title="Tacos close up"
+          width="1000"
+          height="649"
+        />
+        <figcaption class="offscreen">Little taco shop tacos!</figcaption>
+      </figure>
+      </section>
+
+    <main class="main">
+       <article class="main__article">
+        <h2>Our location</h3>
+        <address> Cluj, Cluj-NapocaT<br>
+                România RO
+                <br><br>
+            Phone: <a href="tel: +407123456789">+(40)-0712-345-678</a>
+            </address>
+    
+      </article>
+      <hr>
+      <article class="main__article contact">
+        <h2 class="contact__h2">Our contact form</h2>
+        <form  class="contact__form" action="https://httpbin.org/get" method="get">
+          <fieldset class="contact__fieldset">
+            <legend class="offscreen">Send us a message</legend>
+            <p class="contact_p">
+              <label class="contact__label" for="name">Name</label>
+              <input class="contact__input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="your name"
+                required
+              />
+            </p>
+            <p class="contact_p">
+              <label class="contact__label" for="email">Email</label>
+              <input class="contact__input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your email"
+                required
+              />
+            </p>
+
+            <p>
+              <label class="contact__label" for="msg">Your message</label>
+              <textarea
+              class="contact__textarea" 
+                name="message"
+                id="msg"
+                cols="30"
+                rows="10"
+                placeholder="Type your message here..."
+              ></textarea>
+            </p>
+          </fieldset>
+          <button class="contact_button" type="submit">Send</button>
+          <button class="contact_button" type="reset">Reset</button>
+        </form>
+      </article>
+     
+    </main>
+    <p>
+      <a href="#">Back To Top</a>
+    </p>
+     <footer class="footer">
+      <p>
+        <span class="nowrap"> Copyright &copy; </span>
+        <span class="nowrap">Little Taco Shop </span>
+      </p>
+    </footer> 
+  </body>
+</html>
